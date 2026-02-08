@@ -52,7 +52,7 @@ input {
   margin: 0.5rem 0;
   background-color: #c6c1c1;
   border-radius: 4px;
-  border:;
+  color: #250902;
 }
 
 button {
@@ -64,7 +64,7 @@ button {
   font-family: inherit;
   background-color: #250902;
   cursor: pointer;
-  color: #747bff;
+  color: #faedcd;
   text-transform: uppercase;
   transition: border-color 0.25s;
 }
