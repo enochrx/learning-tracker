@@ -8,7 +8,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./pages/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import Insight from "./pages/Insight";
-import TopicDetail from "./pages/TopicDetail";
+import TopicDetail from "./pages/CreateTopic";
+import CreateTopic from "./pages/CreateTopic";
 
 const router = createBrowserRouter([
   {

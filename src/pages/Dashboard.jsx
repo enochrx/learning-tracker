@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import TopicList from "../TopicList";
+import TopicList from "./TopicList";
 import { useState } from "react";
 
 const topicData = [
