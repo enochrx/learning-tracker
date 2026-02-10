@@ -109,8 +109,8 @@ button:focus-visible {
 .progress {
   display: flex;
   flex-direction: row;
-
+  gap: 1.5rem;
   position: relative;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
