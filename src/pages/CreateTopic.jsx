@@ -13,7 +13,7 @@ const CreateTopic = () => {
   }
 
   return (
-    <div>
+    <div className="form">
       <form action="" onSubmit={handleSubmit}>
         <div className="row">
           <label htmlFor="Topic">Current Topic</label>

@@ -6,9 +6,11 @@ const AppLayout = () => {
   return (
     <div>
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <div>
+        <main className="container">
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 };
