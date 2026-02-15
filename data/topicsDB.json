@@ -1,0 +1,32 @@
+{
+  "topics": [
+    {
+      "id": "67987637578",
+      "concept": "Redux",
+      "progress": "80",
+      "lastStudied": "2026-01-04T19:37:09.000Z",
+      "note": "In Redux, unlike in useReducer, where we throw new Error in the default of the reducer function, for some reason it is advised to not do that and instead to simply return the original state. So basically in case that the reducer receives an action that it doesn't know about, it will simply return the original state back"
+    },
+    {
+      "id": "00897986782",
+      "concept": "Tailwind CSS",
+      "progress": "40",
+      "lastStudied": "2026-02-02T13:37:09.000Z",
+      "note": "Tailwind is a utility-first CSS framework packed with utility classes like flex, text-center, and rotate-90, among many many other classes, that can be composed to build any design directly in your markup."
+    },
+    {
+      "id": "90723664754",
+      "concept": "Thunks",
+      "progress": "80",
+      "lastStudied": "2026-01-17T04:45:09.000Z",
+      "note": "Thunk allows Redux to wait before dispatching the fetch data into the store or in other words, we have used the Thunk in order to defer dispatching into the future. So to the point in which the data that we need has actually arrived."
+    },
+    {
+      "id": "91ad",
+      "concept": " useMemo and useCallback",
+      "progress": "95",
+      "lastStudied": "2026-01-08T14:37:09.000Z",
+      "note": "In React, everything is re-created on every render (including objects and functions), If Objects or functions are passed as props, the child component will always see them as new props on each re-render If props are different between re-renders, memo will not work"
+    }
+  ]
+}

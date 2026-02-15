@@ -1,26 +1,10 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import TopicList from "./TopicList";
-import { useState } from "react";
-
-const topicData = [
-  {
-    id: crypto.randomUUID(),
-    concept: "Redux",
-    progress: 80,
-    lastStudied: new Date().toISOString(),
-    createdAt: new Date(),
-  },
-  {
-    id: crypto.randomUUID(),
-    concept: "Tailwind CSS",
-    progress: 40,
-    lastStudied: new Date(),
-    createdAt: new Date(),
-  },
-];
+import { useTopics } from "../context/TopicContext";
 
 const Dashboard = () => {
-  const [topics, setTopics] = useState(topicData);
+  const { topics } = useTopics();
   const navigate = useNavigate();
 
   function handleAddTopic(e) {
@@ -30,10 +14,14 @@ const Dashboard = () => {
 
   return (
     <div>
-      {topics.map((topic) => (
-        <TopicList key={topic.id} topic={topic} />
-      ))}
-      <button onClick={handleAddTopic}>Add Topic</button>
+      <div className="addbtn">
+        <button onClick={handleAddTopic}>Add Topic</button>
+      </div>
+      <ul className="card-cols">
+        {topics.map((topic) => (
+          <TopicList key={topic.id} topic={topic} />
+        ))}
+      </ul>
     </div>
   );
 };
