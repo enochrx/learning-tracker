@@ -35,7 +35,7 @@ const CreateTopic = () => {
           <label htmlFor="Topic">Current Topic</label>
           <input
             type="text"
-            placeholder="What are you learning?"
+            placeholder="What are you currently learning?"
             value={concept}
             onChange={(e) => setConcept(e.target.value)}
           />
@@ -86,7 +86,7 @@ const CreateTopic = () => {
         <div>
           <button>Add</button>
         </div>
-        <Link to="/">⇦Back to Homepage</Link>
+        <Link to="/">Back to Homepage</Link>
       </form>
     </div>
   );

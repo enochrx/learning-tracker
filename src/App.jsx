@@ -6,7 +6,7 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./pages/AppLayout";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Homepage";
 import Insight from "./pages/Insight";
 import TopicDetail from "./pages/CreateTopic";
 import CreateTopic from "./pages/CreateTopic";
